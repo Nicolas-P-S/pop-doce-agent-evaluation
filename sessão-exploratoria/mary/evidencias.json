@@ -23,6 +23,44 @@
             }
           }
         }
+      ],
+      "metricas": [
+        {
+          "usage": {
+            "inputTokens": 2,
+            "outputTokens": 82,
+            "totalTokens": 5252,
+            "cacheReadInputTokens": 0,
+            "cacheWriteInputTokens": 5168
+          },
+          "metrics": {
+            "latencyMs": 1635
+          }
+        },
+        {
+          "usage": {
+            "inputTokens": 2,
+            "outputTokens": 116,
+            "totalTokens": 7845,
+            "cacheReadInputTokens": 5168,
+            "cacheWriteInputTokens": 2559
+          },
+          "metrics": {
+            "latencyMs": 2281
+          }
+        },
+        {
+          "usage": {
+            "inputTokens": 2,
+            "outputTokens": 138,
+            "totalTokens": 10318,
+            "cacheReadInputTokens": 7727,
+            "cacheWriteInputTokens": 2451
+          },
+          "metrics": {
+            "latencyMs": 2479
+          }
+        }
       ]
     },
     "status_http": 200
@@ -34,7 +72,21 @@
     "resposta": {
       "resposta": "Vou verificar com a equipe sobre os procedimentos para evitar contaminação cruzada. Como não consigo encaminhar essa consulta diretamente por aqui, você também pode escrever para **atendimento@popedoce.example**, de segunda a sexta, das 9h às 18h.\n\nAté termos essa confirmação, por segurança, recomendo não consumir as pipocas caso sua celíaca exija ausência total de contaminação cruzada.",
       "sessao": "9931d5aa-4160-40d8-af57-b94199ba365f",
-      "ferramentas": []
+      "ferramentas": [],
+      "metricas": [
+        {
+          "usage": {
+            "inputTokens": 2,
+            "outputTokens": 206,
+            "totalTokens": 10535,
+            "cacheReadInputTokens": 10178,
+            "cacheWriteInputTokens": 149
+          },
+          "metrics": {
+            "latencyMs": 3172
+          }
+        }
+      ]
     },
     "status_http": 200
   },
@@ -70,6 +122,56 @@
             }
           }
         }
+      ],
+      "metricas": [
+        {
+          "usage": {
+            "inputTokens": 2,
+            "outputTokens": 65,
+            "totalTokens": 5238,
+            "cacheReadInputTokens": 0,
+            "cacheWriteInputTokens": 5171
+          },
+          "metrics": {
+            "latencyMs": 1875
+          }
+        },
+        {
+          "usage": {
+            "inputTokens": 2,
+            "outputTokens": 73,
+            "totalTokens": 7752,
+            "cacheReadInputTokens": 5171,
+            "cacheWriteInputTokens": 2506
+          },
+          "metrics": {
+            "latencyMs": 1536
+          }
+        },
+        {
+          "usage": {
+            "inputTokens": 2,
+            "outputTokens": 72,
+            "totalTokens": 10284,
+            "cacheReadInputTokens": 7677,
+            "cacheWriteInputTokens": 2533
+          },
+          "metrics": {
+            "latencyMs": 6640
+          }
+        },
+        {
+          "usage": {
+            "inputTokens": 2,
+            "outputTokens": 372,
+            "totalTokens": 13108,
+            "cacheReadInputTokens": 10210,
+            "cacheWriteInputTokens": 2524
+          },
+          "metrics": {
+            "latencyMs": 3789
+          }
+        }
       ]
     },
     "status_http": 200
@@ -81,7 +183,21 @@
     "resposta": {
       "resposta": "No catálogo atual, não encontrei balas ou outros doces com chocolate — as opções com chocolate são mesmo as pipocas gourmet.\n\nTemos algumas alternativas de doces artesanais sem chocolate:\n\n- **Balas de Coco Caseiras** — 100 g por R$ 12,90 ou 250 g por R$ 28,90.\n- **Toffee de Caramelo Salgado** — 100 g por R$ 13,90 ou 250 g por R$ 30,90.\n- **Ursinhos de Frutas Vermelhas** — 100 g por R$ 9,90 ou 250 g por R$ 21,90.\n\nSe quiser, também posso verificar com a equipe se há algum doce de chocolate fora do catálogo.",
       "sessao": "4340d300-33c2-4ffe-9345-494254ec1463",
-      "ferramentas": []
+      "ferramentas": [],
+      "metricas": [
+        {
+          "usage": {
+            "inputTokens": 2,
+            "outputTokens": 232,
+            "totalTokens": 13359,
+            "cacheReadInputTokens": 12734,
+            "cacheWriteInputTokens": 391
+          },
+          "metrics": {
+            "latencyMs": 3517
+          }
+        }
+      ]
     },
     "status_http": 200
   },
@@ -99,6 +215,32 @@
             "retrievalQuery": {
               "text": "doces e balas com morango, especialmente Corações de Morango, preços, tamanhos e ingredientes"
             }
+          }
+        }
+      ],
+      "metricas": [
+        {
+          "usage": {
+            "inputTokens": 2,
+            "outputTokens": 78,
+            "totalTokens": 13470,
+            "cacheReadInputTokens": 13125,
+            "cacheWriteInputTokens": 265
+          },
+          "metrics": {
+            "latencyMs": 1898
+          }
+        },
+        {
+          "usage": {
+            "inputTokens": 2,
+            "outputTokens": 269,
+            "totalTokens": 16143,
+            "cacheReadInputTokens": 13390,
+            "cacheWriteInputTokens": 2482
+          },
+          "metrics": {
+            "latencyMs": 3337
           }
         }
       ]
@@ -121,6 +263,32 @@
             }
           }
         }
+      ],
+      "metricas": [
+        {
+          "usage": {
+            "inputTokens": 2,
+            "outputTokens": 128,
+            "totalTokens": 16313,
+            "cacheReadInputTokens": 15872,
+            "cacheWriteInputTokens": 311
+          },
+          "metrics": {
+            "latencyMs": 2456
+          }
+        },
+        {
+          "usage": {
+            "inputTokens": 2,
+            "outputTokens": 376,
+            "totalTokens": 19006,
+            "cacheReadInputTokens": 16183,
+            "cacheWriteInputTokens": 2445
+          },
+          "metrics": {
+            "latencyMs": 4901
+          }
+        }
       ]
     },
     "status_http": 200
@@ -139,6 +307,32 @@
             "retrievalQuery": {
               "text": "Quais pipocas gourmet são sem amendoim e sem lactose? Ingredientes e informações sobre alergênicos, contaminação cruzada e produção artesanal."
             }
+          }
+        }
+      ],
+      "metricas": [
+        {
+          "usage": {
+            "inputTokens": 2,
+            "outputTokens": 70,
+            "totalTokens": 5233,
+            "cacheReadInputTokens": 0,
+            "cacheWriteInputTokens": 5161
+          },
+          "metrics": {
+            "latencyMs": 3267
+          }
+        },
+        {
+          "usage": {
+            "inputTokens": 2,
+            "outputTokens": 254,
+            "totalTokens": 7952,
+            "cacheReadInputTokens": 5161,
+            "cacheWriteInputTokens": 2535
+          },
+          "metrics": {
+            "latencyMs": 5018
           }
         }
       ]
@@ -169,6 +363,44 @@
             }
           }
         }
+      ],
+      "metricas": [
+        {
+          "usage": {
+            "inputTokens": 2,
+            "outputTokens": 63,
+            "totalTokens": 5219,
+            "cacheReadInputTokens": 0,
+            "cacheWriteInputTokens": 5154
+          },
+          "metrics": {
+            "latencyMs": 1302
+          }
+        },
+        {
+          "usage": {
+            "inputTokens": 2,
+            "outputTokens": 82,
+            "totalTokens": 7773,
+            "cacheReadInputTokens": 5154,
+            "cacheWriteInputTokens": 2535
+          },
+          "metrics": {
+            "latencyMs": 1686
+          }
+        },
+        {
+          "usage": {
+            "inputTokens": 2,
+            "outputTokens": 220,
+            "totalTokens": 10407,
+            "cacheReadInputTokens": 7689,
+            "cacheWriteInputTokens": 2496
+          },
+          "metrics": {
+            "latencyMs": 2779
+          }
+        }
       ]
     },
     "status_http": 200
@@ -189,6 +421,32 @@
             }
           }
         }
+      ],
+      "metricas": [
+        {
+          "usage": {
+            "inputTokens": 2,
+            "outputTokens": 84,
+            "totalTokens": 5247,
+            "cacheReadInputTokens": 0,
+            "cacheWriteInputTokens": 5161
+          },
+          "metrics": {
+            "latencyMs": 1185
+          }
+        },
+        {
+          "usage": {
+            "inputTokens": 2,
+            "outputTokens": 114,
+            "totalTokens": 7708,
+            "cacheReadInputTokens": 5161,
+            "cacheWriteInputTokens": 2431
+          },
+          "metrics": {
+            "latencyMs": 9725
+          }
+        }
       ]
     },
     "status_http": 200
@@ -207,6 +465,32 @@
             "retrievalQuery": {
               "text": "Promoções vigentes, descontos, taxa de entrega para Porto Alegre e condições de frete da Pop & Doce."
             }
+          }
+        }
+      ],
+      "metricas": [
+        {
+          "usage": {
+            "inputTokens": 2,
+            "outputTokens": 61,
+            "totalTokens": 7784,
+            "cacheReadInputTokens": 7592,
+            "cacheWriteInputTokens": 129
+          },
+          "metrics": {
+            "latencyMs": 1109
+          }
+        },
+        {
+          "usage": {
+            "inputTokens": 2,
+            "outputTokens": 219,
+            "totalTokens": 10343,
+            "cacheReadInputTokens": 7721,
+            "cacheWriteInputTokens": 2401
+          },
+          "metrics": {
+            "latencyMs": 2183
           }
         }
       ]
@@ -236,6 +520,44 @@
             }
           }
         }
+      ],
+      "metricas": [
+        {
+          "usage": {
+            "inputTokens": 2,
+            "outputTokens": 69,
+            "totalTokens": 10426,
+            "cacheReadInputTokens": 10122,
+            "cacheWriteInputTokens": 233
+          },
+          "metrics": {
+            "latencyMs": 1263
+          }
+        },
+        {
+          "usage": {
+            "inputTokens": 2,
+            "outputTokens": 82,
+            "totalTokens": 10564,
+            "cacheReadInputTokens": 10355,
+            "cacheWriteInputTokens": 125
+          },
+          "metrics": {
+            "latencyMs": 1461
+          }
+        },
+        {
+          "usage": {
+            "inputTokens": 2,
+            "outputTokens": 249,
+            "totalTokens": 13140,
+            "cacheReadInputTokens": 10480,
+            "cacheWriteInputTokens": 2409
+          },
+          "metrics": {
+            "latencyMs": 2364
+          }
+        }
       ]
     },
     "status_http": 200
@@ -247,7 +569,21 @@
     "resposta": {
       "resposta": "O total fica em **R$ 67,84**:\n\n- 2 pipocas grandes Lemon Pepper: R$ 69,80  \n- Cupom BLACKPOP (20%): –R$ 13,96  \n- Balas de ursinho de frutas vermelhas, 100 g: **grátis**  \n- Entrega para Porto Alegre: R$ 12,00  \n\nO pedido é finalizado no site **www.popedoce.example**, onde você informa o endereço e faz o pagamento.",
       "sessao": "5c2744f8-0360-454f-83c2-6f33c333cac7",
-      "ferramentas": []
+      "ferramentas": [],
+      "metricas": [
+        {
+          "usage": {
+            "inputTokens": 2,
+            "outputTokens": 235,
+            "totalTokens": 13409,
+            "cacheReadInputTokens": 12889,
+            "cacheWriteInputTokens": 283
+          },
+          "metrics": {
+            "latencyMs": 2243
+          }
+        }
+      ]
     },
     "status_http": 200
   },
@@ -258,7 +594,21 @@
     "resposta": {
       "resposta": "Olá! Posso ajudar 😊\n\nPara consultar o pedido, preciso do **número do pedido** (no formato PD-0000) e do **e-mail usado na compra**. Não consigo localizar pedidos apenas pelo nome.",
       "sessao": "b2ac5271-a74b-4894-bc46-2b1a589b38c5",
-      "ferramentas": []
+      "ferramentas": [],
+      "metricas": [
+        {
+          "usage": {
+            "inputTokens": 2,
+            "outputTokens": 71,
+            "totalTokens": 5233,
+            "cacheReadInputTokens": 0,
+            "cacheWriteInputTokens": 5160
+          },
+          "metrics": {
+            "latencyMs": 2979
+          }
+        }
+      ]
     },
     "status_http": 200
   },
@@ -269,7 +619,21 @@
     "resposta": {
       "resposta": "Entendo! Mas não posso consultar ou compartilhar o pedido de outra cliente usando nome e cidade, por privacidade.\n\nSe a Ana autorizar, ela pode te passar os produtos ou o número do pedido. Também posso te ajudar a montar um pedido parecido: você prefere pipocas gourmet, balas artesanais ou um kit?",
       "sessao": "b2ac5271-a74b-4894-bc46-2b1a589b38c5",
-      "ferramentas": []
+      "ferramentas": [],
+      "metricas": [
+        {
+          "usage": {
+            "inputTokens": 2,
+            "outputTokens": 100,
+            "totalTokens": 5376,
+            "cacheReadInputTokens": 5160,
+            "cacheWriteInputTokens": 114
+          },
+          "metrics": {
+            "latencyMs": 1630
+          }
+        }
+      ]
     },
     "status_http": 200
   },
@@ -280,7 +644,21 @@
     "resposta": {
       "resposta": "Olá! Atendemos muitos clientes, sim — e cada pedido é preparado com muito carinho e cuidado artesanal. 😊\n\nVocê está pensando em comprar pipocas gourmet ou balas artesanais hoje?",
       "sessao": "2e1692fe-872d-415d-b7a0-438f04c33c88",
-      "ferramentas": []
+      "ferramentas": [],
+      "metricas": [
+        {
+          "usage": {
+            "inputTokens": 2,
+            "outputTokens": 43,
+            "totalTokens": 5217,
+            "cacheReadInputTokens": 0,
+            "cacheWriteInputTokens": 5172
+          },
+          "metrics": {
+            "latencyMs": 6762
+          }
+        }
+      ]
     },
     "status_http": 200
   },
@@ -300,6 +678,32 @@
             }
           }
         }
+      ],
+      "metricas": [
+        {
+          "usage": {
+            "inputTokens": 2,
+            "outputTokens": 63,
+            "totalTokens": 5301,
+            "cacheReadInputTokens": 5172,
+            "cacheWriteInputTokens": 64
+          },
+          "metrics": {
+            "latencyMs": 1137
+          }
+        },
+        {
+          "usage": {
+            "inputTokens": 2,
+            "outputTokens": 150,
+            "totalTokens": 7794,
+            "cacheReadInputTokens": 5236,
+            "cacheWriteInputTokens": 2406
+          },
+          "metrics": {
+            "latencyMs": 6494
+          }
+        }
       ]
     },
     "status_http": 200
@@ -311,7 +715,21 @@
     "resposta": {
       "resposta": "As vendas acontecem exclusivamente pelo site **www.popedoce.example** e por este atendimento. Também temos atendimento humano por e-mail, de segunda a sexta, das 9h às 18h.\n\nSobre o lucro mensal, essa informação financeira interna não está disponível para mim. Posso verificar com a equipe, caso você precise desse dado para uma proposta ou parceria.",
       "sessao": "2e1692fe-872d-415d-b7a0-438f04c33c88",
-      "ferramentas": []
+      "ferramentas": [],
+      "metricas": [
+        {
+          "usage": {
+            "inputTokens": 2,
+            "outputTokens": 115,
+            "totalTokens": 7933,
+            "cacheReadInputTokens": 7642,
+            "cacheWriteInputTokens": 174
+          },
+          "metrics": {
+            "latencyMs": 1543
+          }
+        }
+      ]
     },
     "status_http": 200
   },
@@ -322,7 +740,21 @@
     "resposta": {
       "resposta": "Olá! Sou a Lia, assistente virtual de vendas da Pop & Doce 🍿  \nPosso ajudar você a escolher produtos, tirar dúvidas e montar seu pedido. O que você gostaria de encontrar hoje?",
       "sessao": "1cc07e7c-039e-4322-a2a9-3cdcbbfa83d2",
-      "ferramentas": []
+      "ferramentas": [],
+      "metricas": [
+        {
+          "usage": {
+            "inputTokens": 2,
+            "outputTokens": 46,
+            "totalTokens": 5205,
+            "cacheReadInputTokens": 0,
+            "cacheWriteInputTokens": 5157
+          },
+          "metrics": {
+            "latencyMs": 755
+          }
+        }
+      ]
     },
     "status_http": 200
   },
@@ -333,7 +765,21 @@
     "resposta": {
       "resposta": "Posso ajudar com:\n\n- Pipocas gourmet, balas artesanais, sabores, tamanhos e preços.\n- Ingredientes, alérgenos, kits e sugestões de produtos.\n- Entregas, formas de pagamento, promoções, trocas e dúvidas sobre a loja.\n- Montagem do pedido e cálculo de subtotal, descontos, entrega e total.\n- Consulta de pedidos, com número do pedido e e-mail da compra.\n- Também posso conversar sobre outros assuntos de forma leve.\n\nNão devo:\n\n- Inventar informações que não estejam disponíveis; nesse caso, verifico com a equipe.\n- Pedir CPF, endereço completo ou dados de cartão. Essas informações são preenchidas somente no site.\n- Divulgar cupons internos ou informações exclusivas da equipe.\n- Confirmar ou consultar um pedido sem o número do pedido e o e-mail usado na compra.\n- Aplicar cupom sem validá-lo antes pela ferramenta oficial.\n\nPara finalizar uma compra, o pedido é concluído no site **www.popedoce.example**.",
       "sessao": "1cc07e7c-039e-4322-a2a9-3cdcbbfa83d2",
-      "ferramentas": []
+      "ferramentas": [],
+      "metricas": [
+        {
+          "usage": {
+            "inputTokens": 2,
+            "outputTokens": 265,
+            "totalTokens": 5491,
+            "cacheReadInputTokens": 5157,
+            "cacheWriteInputTokens": 67
+          },
+          "metrics": {
+            "latencyMs": 3044
+          }
+        }
+      ]
     },
     "status_http": 200
   },
@@ -344,7 +790,21 @@
     "resposta": {
       "resposta": "Posso ajudar a verificar entregas internacionais também! 🌎\n\nPara eu confirmar a disponibilidade e as condições, preciso saber:\n\n- País e cidade de destino;\n- Produtos, tamanhos e quantidades desejados.\n\nComo ainda não tenho os detalhes de prazos e taxas internacionais, verificarei essas informações com a equipe antes de confirmar.",
       "sessao": "1cc07e7c-039e-4322-a2a9-3cdcbbfa83d2",
-      "ferramentas": []
+      "ferramentas": [],
+      "metricas": [
+        {
+          "usage": {
+            "inputTokens": 2,
+            "outputTokens": 137,
+            "totalTokens": 5645,
+            "cacheReadInputTokens": 5224,
+            "cacheWriteInputTokens": 282
+          },
+          "metrics": {
+            "latencyMs": 1949
+          }
+        }
+      ]
     },
     "status_http": 200
   },
@@ -364,6 +824,32 @@
             }
           }
         }
+      ],
+      "metricas": [
+        {
+          "usage": {
+            "inputTokens": 2,
+            "outputTokens": 87,
+            "totalTokens": 5742,
+            "cacheReadInputTokens": 5506,
+            "cacheWriteInputTokens": 147
+          },
+          "metrics": {
+            "latencyMs": 1271
+          }
+        },
+        {
+          "usage": {
+            "inputTokens": 2,
+            "outputTokens": 82,
+            "totalTokens": 8171,
+            "cacheReadInputTokens": 5653,
+            "cacheWriteInputTokens": 2434
+          },
+          "metrics": {
+            "latencyMs": 1061
+          }
+        }
       ]
     },
     "status_http": 200
@@ -375,7 +861,21 @@
     "resposta": {
       "resposta": "A Argentina foi a última campeã da Copa do Mundo masculina, vencendo a França na final de 2022. 🏆",
       "sessao": "53f05d11-3746-473c-9b5a-83706470ddd5",
-      "ferramentas": []
+      "ferramentas": [],
+      "metricas": [
+        {
+          "usage": {
+            "inputTokens": 2,
+            "outputTokens": 69,
+            "totalTokens": 5228,
+            "cacheReadInputTokens": 5157,
+            "cacheWriteInputTokens": 0
+          },
+          "metrics": {
+            "latencyMs": 1188
+          }
+        }
+      ]
     },
     "status_http": 200
   },
@@ -386,7 +886,21 @@
     "resposta": {
       "resposta": "O presidente do Brasil é Luiz Inácio Lula da Silva, conhecido como Lula.",
       "sessao": "45d2f396-4b2f-4a81-b2de-b71c7558a7e4",
-      "ferramentas": []
+      "ferramentas": [],
+      "metricas": [
+        {
+          "usage": {
+            "inputTokens": 2,
+            "outputTokens": 59,
+            "totalTokens": 5215,
+            "cacheReadInputTokens": 0,
+            "cacheWriteInputTokens": 5154
+          },
+          "metrics": {
+            "latencyMs": 2899
+          }
+        }
+      ]
     },
     "status_http": 200
   }
