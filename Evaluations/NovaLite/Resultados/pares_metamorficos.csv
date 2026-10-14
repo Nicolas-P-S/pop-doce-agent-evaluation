@@ -1,0 +1,25 @@
+par,casos,versao,run,consistente,ambos_passaram,passou,motivo
+MM-01,CAT-01+CAT-02,original,1,False,False,False,"As respostas não são consistentes com o critério B, pois os valores informados são diferentes."
+MM-01,CAT-01+CAT-02,original,2,False,False,False,As respostas divergem no preço informado.
+MM-01,CAT-01+CAT-02,original,3,False,False,False,"As respostas não são consistentes com o critério B, pois o valor informado é diferente de R$ 39,90."
+MM-02,CAT-03+CAT-04,original,1,True,True,True,As respostas são consistentes com a relação esperada entre as respostas.
+MM-02,CAT-03+CAT-04,original,2,True,True,True,As respostas são consistentes com a relação esperada entre os casos de teste metamórfico.
+MM-02,CAT-03+CAT-04,original,3,True,True,True,As respostas são consistentes com a relação esperada entre os casos de teste metamórficos.
+MM-03,ALE-01+ALE-02,original,1,False,False,False,A Resposta A afirma incorretamente que a Pipoca Cookies & Cream é sem glúten.
+MM-03,ALE-01+ALE-02,original,2,False,False,False,As respostas não são consistentes com a relação esperada.
+MM-03,ALE-01+ALE-02,original,3,False,False,False,"A resposta B não é consistente com o critério B, pois afirma que a receita é indicada como sem glúten."
+MM-04,PED-01+PED-02,original,1,True,False,False,As respostas são consistentes com a relação esperada entre os pedidos.
+MM-04,PED-01+PED-02,original,2,False,False,False,O desconto aplicado em PED-02 está incorreto.
+MM-04,PED-01+PED-02,original,3,False,False,False,O desconto aplicado em PED-02 não está correto.
+MM-05,PED-03+PED-04,original,1,True,False,False,As respostas são consistentes com a relação esperada entre os casos de teste.
+MM-05,PED-03+PED-04,original,2,True,True,True,As respostas são consistentes com a relação esperada entre os casos de teste.
+MM-05,PED-03+PED-04,original,3,True,True,True,As respostas são consistentes com a relação esperada entre os casos de teste.
+MM-06,CON-01+CON-02,original,1,True,True,True,As respostas são consistentes com a relação esperada entre as respostas.
+MM-06,CON-01+CON-02,original,2,True,False,False,As respostas são consistentes com a relação esperada entre as respostas.
+MM-06,CON-01+CON-02,original,3,True,True,True,As respostas são consistentes com a relação esperada entre as respostas.
+MM-07,CUP-05+CUP-06,original,1,True,True,True,As respostas A e B são consistentes com a relação esperada e comunicam a mesma informação sobre a promoção e o brinde.
+MM-07,CUP-05+CUP-06,original,2,True,True,True,As respostas A e B são consistentes com a relação esperada.
+MM-07,CUP-05+CUP-06,original,3,False,False,False,"A resposta A não menciona o brinde de balas de goma, enquanto a resposta B o menciona corretamente."
+MM-08,MT-06+MT-07,original,1,True,True,True,As respostas são consistentes com a relação esperada entre MT-06 e MT-07.
+MM-08,MT-06+MT-07,original,2,True,True,True,As respostas são consistentes com a relação esperada entre MT-06 e MT-07.
+MM-08,MT-06+MT-07,original,3,True,False,False,As respostas são consistentes com a relação esperada entre MT-06 e MT-07.
