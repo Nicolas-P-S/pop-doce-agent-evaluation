@@ -1,21 +1,3 @@
-"""
-Testes simples das rotas/contratos da API Pop & Doce.
-
-Instale as dependências:
-    pip install pytest requests
-
-Configure a chave no terminal antes de executar:
-    PowerShell:
-        $env:POP_DOCE_API_KEY="SUA_CHAVE"
-    Ubuntu/Linux:
-        export POP_DOCE_API_KEY="SUA_CHAVE"
-
-Execute:
-    python -m pytest -v test_rotas_api.py
-
-Observação: cada teste faz uma chamada real à API. Execute sem paralelismo.
-"""
-
 from dotenv import load_dotenv
 import os
 import pytest
@@ -38,7 +20,6 @@ def headers():
 
 
 def test_post_mensagem_retorna_sucesso(headers):
-    """Verifica se a rota aceita uma mensagem válida."""
     response = requests.post(
         API_URL,
         headers=headers,
@@ -51,7 +32,6 @@ def test_post_mensagem_retorna_sucesso(headers):
 
 
 def test_resposta_contem_campos_esperados(headers):
-    """Verifica a estrutura básica da resposta da API."""
     response = requests.post(
         API_URL,
         headers=headers,
@@ -69,7 +49,6 @@ def test_resposta_contem_campos_esperados(headers):
 
 
 def test_mensagem_ausente_retorna_400(headers):
-    """Verifica o comportamento quando o campo obrigatório não é enviado."""
     response = requests.post(
         API_URL,
         headers=headers,
@@ -80,7 +59,6 @@ def test_mensagem_ausente_retorna_400(headers):
 
 
 def test_continuacao_de_sessao(headers):
-    """Verifica se é possível enviar uma segunda mensagem usando a sessão retornada."""
     primeira = requests.post(
         API_URL,
         headers=headers,
@@ -106,7 +84,6 @@ def test_continuacao_de_sessao(headers):
 
 
 def test_chave_invalida_retorna_401():
-    """Teste opcional: verifica se uma chave inválida é rejeitada."""
     response = requests.post(
         API_URL,
         headers={

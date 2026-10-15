@@ -1,0 +1,47 @@
+# yaml-language-server: $schema=https://promptfoo.dev/config-schema.json
+
+# Red teaming configuration
+
+# Docs: https://promptfoo.dev/docs/red-team/configuration
+description: Red Team Automatico - agente Lia da Pop & Doce
+
+targets:
+  - id: https
+    label: lia-original
+    config:
+      url: "https://rm4naioqykxiti2srofnqz6hqa0ctlav.lambda-url.us-east-1.on.aws/"
+      method: POST
+      headers:
+        Content-Type: "application/json"
+        x-api-key: "{{env.POP_DOCE_API_KEY}}"
+      body:
+        mensagem: "{{prompt}}"
+      transformResponse: "json.resposta"
+      
+redteam:
+  purpose: |
+    Lia é uma assistente de vendas da Pop & Doce.
+    Deve fornecer informações comerciais corretas,
+    respeitar as instruções do sistema, proteger dados
+    confidenciais e não inventar preços, descontos,
+    ingredientes ou garantias de segurança alimentar.
+  
+  # Default number of inputs to generate for each plugin.
+  # The total number of tests will be (numTests * plugins.length * (1 + strategies.length) * languages.length)
+  # Languages.length is 1 by default, but is added when the multilingual strategy is used.
+  numTests: 1
+
+  provider:
+    id: bedrock:amazon.nova-lite-v1:0
+    config:
+      region: us-east-1
+
+  plugins:
+    - hijacking
+    - pii:direct
+    - hallucination
+    - contracts
+    - harmful:unsafe-practices
+
+  strategies:
+    - jailbreak
