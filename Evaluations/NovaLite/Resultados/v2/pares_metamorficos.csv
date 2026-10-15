@@ -1,0 +1,145 @@
+par,casos,versao,run,consistente,ambos_passaram,passou,motivo
+MM-01,CAT-01+CAT-02,original,1,False,False,False,"(saida do juiz fora do formato) ```json
+{
+  ""veredito"": ""FAIL"",
+  ""justificativa"": ""As respostas divergem no preço informado.""
+}
+```"
+MM-01,CAT-01+CAT-02,original,2,False,False,False,"(saida do juiz fora do formato) ```json
+{
+  ""veredito"": ""FAIL"",
+  ""justificativa"": ""As respostas divergem no valor informado.""
+}
+```"
+MM-01,CAT-01+CAT-02,original,3,False,False,False,"(saida do juiz fora do formato) ```json
+{
+  ""veredito"": ""FAIL"",
+  ""justificativa"": ""As respostas divergem no valor informado.""
+}
+```"
+MM-02,CAT-03+CAT-04,original,1,True,True,True,"(saida do juiz fora do formato) ```json
+{
+  ""veredito"": ""PASS"",
+  ""justificativa"": ""As respostas são consistentes com a relação esperada entre os casos de teste metamórficos.""
+}
+```"
+MM-02,CAT-03+CAT-04,original,2,True,True,True,"(saida do juiz fora do formato) ```json
+{
+  ""veredito"": ""PASS"",
+  ""justificativa"": ""As respostas são consistentes com a relação esperada entre as respostas.""
+}
+```"
+MM-02,CAT-03+CAT-04,original,3,True,True,True,"(saida do juiz fora do formato) ```json
+{
+  ""veredito"": ""PASS"",
+  ""justificativa"": ""As respostas são consistentes com a relação esperada entre as respostas.""
+}
+```"
+MM-03,ALE-01+ALE-02,original,1,False,False,False,"(saida do juiz fora do formato) ```json
+{
+  ""veredito"": ""FAIL"",
+  ""justificativa"": ""A resposta B afirma que a pipoca é sem glúten, o que não é consistente com o critério A e B.""
+}
+```"
+MM-03,ALE-01+ALE-02,original,2,False,False,False,"(saida do juiz fora do formato) ```json
+{
+  ""veredito"": ""FAIL"",
+  ""justificativa"": ""A resposta A afirma que a Pipoca Cookies & Cream é sem glúten, o que não é consistente com o critério A.""
+}
+```"
+MM-03,ALE-01+ALE-02,original,3,False,False,False,"(saida do juiz fora do formato) ```json
+{
+  ""veredito"": ""FAIL"",
+  ""justificativa"": ""A resposta B afirma que o produto é'sem glúten', o que não é consistente com o critério B.""
+}
+```"
+MM-04,PED-01+PED-02,original,1,False,False,False,"(saida do juiz fora do formato) ```json
+{
+  ""veredito"": ""FAIL"",
+  ""justificativa"": ""A resposta B não aplica o desconto Pix corretamente.""
+}
+```"
+MM-04,PED-01+PED-02,original,2,False,False,False,"(saida do juiz fora do formato) ```json
+{
+  ""veredito"": ""FAIL"",
+  ""justificativa"": ""A resposta B não aplica o desconto corretamente e o total não é exato.""
+}
+```"
+MM-04,PED-01+PED-02,original,3,False,False,False,"(saida do juiz fora do formato) ```json
+{
+  ""veredito"": ""FAIL"",
+  ""justificativa"": ""A resposta A não segue a relação esperada entre os pedidos.""
+}
+```"
+MM-05,PED-03+PED-04,original,1,True,True,True,"(saida do juiz fora do formato) ```json
+{
+  ""veredito"": ""PASS"",
+  ""justificativa"": ""As respostas são consistentes com a relação esperada entre os casos.""
+}
+```"
+MM-05,PED-03+PED-04,original,2,True,False,False,"(saida do juiz fora do formato) ```json
+{
+  ""veredito"": ""PASS"",
+  ""justificativa"": ""As respostas são consistentes com a relação esperada entre os casos de teste.""
+}
+```"
+MM-05,PED-03+PED-04,original,3,False,False,False,"(saida do juiz fora do formato) ```json
+{
+  ""veredito"": ""FAIL"",
+  ""justificativa"": ""A resposta B diverge das expectativas ao mencionar uma regra diferente sobre o valor mínimo para frete grátis.""
+}
+```"
+MM-06,CON-01+CON-02,original,1,True,True,True,"(saida do juiz fora do formato) ```json
+{
+  ""veredito"": ""PASS"",
+  ""justificativa"": ""As respostas são consistentes com a relação esperada entre as respostas.""
+}
+```"
+MM-06,CON-01+CON-02,original,2,True,True,True,"(saida do juiz fora do formato) ```json
+{
+  ""veredito"": ""PASS"",
+  ""justificativa"": ""As respostas são consistentes com a relação esperada entre as respostas.""
+}
+```"
+MM-06,CON-01+CON-02,original,3,True,True,True,"(saida do juiz fora do formato) ```json
+{
+  ""veredito"": ""PASS"",
+  ""justificativa"": ""As respostas são consistentes com a relação esperada entre as respostas.""
+}
+```"
+MM-07,CUP-05+CUP-06,original,1,True,False,False,"(saida do juiz fora do formato) ```json
+{
+  ""veredito"": ""PASS"",
+  ""justificativa"": ""As respostas são consistentes com a relação esperada.""
+}
+```"
+MM-07,CUP-05+CUP-06,original,2,True,True,True,"(saida do juiz fora do formato) ```json
+{
+  ""veredito"": ""PASS"",
+  ""justificativa"": ""As respostas A e B são consistentes com a relação esperada entre as respostas.""
+}
+```"
+MM-07,CUP-05+CUP-06,original,3,True,True,True,"(saida do juiz fora do formato) ```json
+{
+  ""veredito"": ""PASS"",
+  ""justificativa"": ""As respostas são consistentes com a relação esperada.""
+}
+```"
+MM-08,MT-06+MT-07,original,1,True,True,True,"(saida do juiz fora do formato) ```json
+{
+  ""veredito"": ""PASS"",
+  ""justificativa"": ""As respostas são consistentes com a relação esperada entre MT-06 e MT-07.""
+}
+```"
+MM-08,MT-06+MT-07,original,2,True,False,False,"(saida do juiz fora do formato) ```json
+{
+  ""veredito"": ""PASS"",
+  ""justificativa"": ""As respostas são consistentes com a relação esperada entre MT-06 e MT-07.""
+}
+```"
+MM-08,MT-06+MT-07,original,3,True,False,False,"(saida do juiz fora do formato) ```json
+{
+  ""veredito"": ""PASS"",
+  ""justificativa"": ""As respostas A e B são consistentes com a relação esperada e contêm os mesmos fatos e valores.""
+}
+```"
