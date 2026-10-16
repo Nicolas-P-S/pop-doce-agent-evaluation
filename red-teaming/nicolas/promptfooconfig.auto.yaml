@@ -29,12 +29,12 @@ redteam:
   # Default number of inputs to generate for each plugin.
   # The total number of tests will be (numTests * plugins.length * (1 + strategies.length) * languages.length)
   # Languages.length is 1 by default, but is added when the multilingual strategy is used.
-  numTests: 1
+  numTests: 3
 
   provider:
-    id: bedrock:amazon.nova-lite-v1:0
+    id: bedrock:us.amazon.nova-2-lite-v1:0
     config:
-      region: us-east-1
+      region: us-east-2
 
   plugins:
     - hijacking
