@@ -5,7 +5,7 @@ prompts:
 
 targets:
   - id: https
-    label: lia
+    label: lia-corrigido
     config:
       url: "https://rm4naioqykxiti2srofnqz6hqa0ctlav.lambda-url.us-east-1.on.aws/"
       method: POST
@@ -14,6 +14,7 @@ targets:
         x-api-key: "{{env.POP_DOCE_API_KEY}}"
       body:
         mensagem: "{{prompt}}"
+        prompt_sistema: "{{prompt_corrigido}}"
       transformResponse: "json.resposta"
 
 
@@ -24,6 +25,8 @@ evaluateOptions:
 
 
 defaultTest:
+  vars:
+    prompt_corrigido: file://../../prompt-corrigido/prompt-corrigido.txt
   options:
     provider:
       id: bedrock:us.amazon.nova-pro-v1:0

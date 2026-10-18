@@ -11,6 +11,7 @@
 #   Strategies:  
 # ===================================================================
 description: Red Team Automatico - agente Lia da Pop & Doce
+
 targets:
   - id: https
     label: lia-original
@@ -22,6 +23,7 @@ targets:
         x-api-key: '{{env.POP_DOCE_API_KEY}}'
       body:
         mensagem: '{{prompt}}'
+        prompt_sistema: "{{prompt_corrigido}}"
       transformResponse: json.resposta
 redteam:
   purpose: |
@@ -77,6 +79,8 @@ redteam:
   strategies: []
   entities: &ref_0 []
 defaultTest:
+  vars:
+    prompt_corrigido: file://../../prompt-corrigido/prompt-corrigido.txt
   metadata:
     purpose: |
       Lia é uma assistente de vendas da Pop & Doce.
