@@ -7,6 +7,7 @@ import json
 import os
 import re
 import time
+import unicodedata
 import uuid
 from datetime import datetime, timezone
 from pathlib import Path
@@ -159,6 +160,19 @@ def deterministic_check(
     return None, "Sem verificação determinística específica; critério avaliado pelo G-Eval."
 
 
+def threshold_for_severity(
+    severity: str,
+    general_threshold: float,
+    critical_threshold: float,
+) -> float:
+    """Apply the stricter threshold to critical cases only."""
+    normalized = unicodedata.normalize("NFKD", severity or "")
+    normalized = (
+        normalized.encode("ascii", "ignore").decode("ascii").strip().lower()
+    )
+    return critical_threshold if normalized == "critica" else general_threshold
+
+
 def main() -> int:
     load_dotenv()
 
@@ -180,7 +194,18 @@ def main() -> int:
         "--ids",
         help="Opcional: IDs separados por vírgula, ex. CAT-01,CAT-02.",
     )
-    parser.add_argument("--threshold", type=float, default=0.7)
+    parser.add_argument(
+        "--threshold",
+        type=float,
+        default=0.7,
+        help="Threshold G-Eval geral (padrão: 0.7).",
+    )
+    parser.add_argument(
+        "--critical-threshold",
+        type=float,
+        default=0.9,
+        help="Threshold G-Eval para casos críticos (padrão: 0.9).",
+    )
     args = parser.parse_args()
 
     api_url = os.getenv("POP_DOCE_API_URL")
@@ -191,6 +216,10 @@ def main() -> int:
 
     if args.runs < 1:
         parser.error("--runs precisa ser pelo menos 1.")
+    if not 0.0 <= args.threshold <= 1.0:
+        parser.error("--threshold precisa estar entre 0 e 1.")
+    if not 0.0 <= args.critical_threshold <= 1.0:
+        parser.error("--critical-threshold precisa estar entre 0 e 1.")
 
     prompt_sistema = None
     if args.version == "corrigida":
@@ -354,6 +383,12 @@ def main() -> int:
                 ] = case_id
 
             expected_tools = EXPECTED_TOOLS.get(case_id, set())
+            case_severity = case.get("severidade_se_falhar", "").strip()
+            case_threshold = threshold_for_severity(
+                case_severity,
+                args.threshold,
+                args.critical_threshold,
+            )
             tool_ok = (
                 not expected_tools
                 or bool(expected_tools.intersection(all_tools))
@@ -385,7 +420,7 @@ def main() -> int:
                             SingleTurnParams.ACTUAL_OUTPUT,
                             SingleTurnParams.EXPECTED_OUTPUT,
                         ],
-                        threshold=args.threshold,
+                        threshold=case_threshold,
                         model=judge,
                     )
                     test_case = LLMTestCase(
@@ -404,7 +439,7 @@ def main() -> int:
                 not call_errors
                 and not judge_error
                 and score is not None
-                and score >= args.threshold
+                and score >= case_threshold
                 and tool_ok
                 and deterministic_ok is not False
             )
@@ -423,6 +458,7 @@ def main() -> int:
                     "run": run_number,
                     "case_id": case_id,
                     "category": case.get("categoria"),
+                    "severity": case_severity,
                     "metamorphic_pair": (
                         pair_match.group(1) if pair_match else None
                     ),
@@ -436,7 +472,7 @@ def main() -> int:
                     "deterministic_check": deterministic_ok,
                     "deterministic_reason": deterministic_reason,
                     "geval_score": score,
-                    "geval_threshold": args.threshold,
+                    "geval_threshold": case_threshold,
                     "geval_reason": judge_reason,
                     "geval_error": judge_error,
                     "api_errors": call_errors,
@@ -452,7 +488,7 @@ def main() -> int:
             )
             print(
                 f"{status} {case_id} run {run_number}/{args.runs} — "
-                f"{score_label}; ferramentas "
+                f"{score_label} (limite {case_threshold:.2f}); ferramentas "
                 f"{'ok' if tool_ok else 'FALHOU'}"
             )
 
@@ -465,6 +501,22 @@ def main() -> int:
 
             case_a = members["A"]
             case_b = members["B"]
+            case_a_data = next(item for item in cases if item["id"] == case_a)
+            case_b_data = next(item for item in cases if item["id"] == case_b)
+            severity_a = case_a_data.get("severidade_se_falhar", "").strip()
+            severity_b = case_b_data.get("severidade_se_falhar", "").strip()
+            pair_threshold = max(
+                threshold_for_severity(
+                    severity_a,
+                    args.threshold,
+                    args.critical_threshold,
+                ),
+                threshold_for_severity(
+                    severity_b,
+                    args.threshold,
+                    args.critical_threshold,
+                ),
+            )
             answer_a = run_answers.get(case_a, "")
             answer_b = run_answers.get(case_b, "")
 
@@ -500,7 +552,7 @@ def main() -> int:
                             SingleTurnParams.ACTUAL_OUTPUT,
                             SingleTurnParams.EXPECTED_OUTPUT,
                         ],
-                        threshold=args.threshold,
+                        threshold=pair_threshold,
                         model=judge,
                     )
 
@@ -534,7 +586,7 @@ def main() -> int:
             else:
                 pair_passed = (
                     pair_score is not None
-                    and pair_score >= args.threshold
+                    and pair_score >= pair_threshold
                     and pair_error is None
                 )
 
@@ -556,13 +608,14 @@ def main() -> int:
                     "pair_id": pair_id,
                     "case_a": case_a,
                     "case_b": case_b,
+                    "severities": {case_a: severity_a, case_b: severity_b},
                     "answer_a": answer_a,
                     "answer_b": answer_b,
                     "expected_relation": METAMORPHIC_RELATIONS[pair_id],
                     "deterministic_check": pair_check,
                     "deterministic_reason": pair_check_reason,
                     "geval_score": pair_score,
-                    "geval_threshold": args.threshold,
+                    "geval_threshold": pair_threshold,
                     "geval_reason": pair_reason,
                     "geval_error": pair_error,
                     "passed": pair_passed,
@@ -578,7 +631,8 @@ def main() -> int:
 
             print(
                 f"{'PASS' if pair_passed else 'FAIL'} "
-                f"{pair_id} relação A/B run {run_number}/{args.runs} — "
+                f"{pair_id} relação A/B run {run_number}/{args.runs} "
+                f"(limite {pair_threshold:.2f}) — "
                 f"{pair_label}"
             )
 
