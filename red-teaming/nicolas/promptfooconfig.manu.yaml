@@ -26,8 +26,9 @@ evaluateOptions:
 defaultTest:
   options:
     provider:
-      id: bedrock:us.amazon.nova-2-lite-v1:0
+      id: bedrock:us.amazon.nova-pro-v1:0
       config:
         region: us-east-2
+        temperature: 0
 
 tests: file://ataques_manuais.yaml
