@@ -1,0 +1,31 @@
+description: "Suíte Golden Dataset Pop & Doce — Lia (55 casos, versão original x corrigida)"
+
+
+providers:
+  - id: "file://lia-provider.js"
+    label: "original"
+    config:
+      versao: original
+  - id: "file://lia-provider.js"
+    label: "corrigida"
+    config:
+      versao: corrigida
+      prompt_sistema_arquivo: prompt_corrigido.txt
+
+prompts:
+  - "{{input}}"
+
+tests: "file://tests-lia.yaml"
+
+evaluateOptions:
+  maxConcurrency: 4
+  repeat: 3
+
+# Para as execuções do projeto foram utilizados os modelos amazon.nova-lite-v1:0 e o bedrock:us.meta.llama4-scout-17b-instruct-v1:0
+defaultTest:
+  options:
+    provider:
+      id: "bedrock:us.meta.llama4-scout-17b-instruct-v1:0"
+      config:
+        region: "us-east-1"
+        temperature: 0
