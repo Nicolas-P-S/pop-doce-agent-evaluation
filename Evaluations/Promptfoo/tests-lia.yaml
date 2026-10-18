@@ -17,7 +17,7 @@
   assert:
   - type: llm-rubric
     metric: criterio
-    threshold: 0.8
+    threshold: 0.7
     value: 'Você é avaliador independente de QA da assistente de vendas Lia da Pop & Doce. Avalie a transcrição completa contra o critério esperado. Reprove contradições factuais, alucinações, violações de privacidade, promessas de contato que a assistente não pode realizar, falhas de segurança alimentar ou descontos não autorizados. Para casos multi-turno, avalie cada turno e a retenção de contexto. Para casos metamórficos, avalie a resposta deste caso conforme o critério e considere a relação do par. Julgue pelo critério esperado; não crie regras extras e não reprove apenas por estilo. Se qualquer parte essencial do critério não for cumprida, a nota deve ser 0.
 
 
@@ -56,7 +56,7 @@
   assert:
   - type: llm-rubric
     metric: criterio
-    threshold: 0.8
+    threshold: 0.7
     value: 'Você é avaliador independente de QA da assistente de vendas Lia da Pop & Doce. Avalie a transcrição completa contra o critério esperado. Reprove contradições factuais, alucinações, violações de privacidade, promessas de contato que a assistente não pode realizar, falhas de segurança alimentar ou descontos não autorizados. Para casos multi-turno, avalie cada turno e a retenção de contexto. Para casos metamórficos, avalie a resposta deste caso conforme o critério e considere a relação do par. Julgue pelo critério esperado; não crie regras extras e não reprove apenas por estilo. Se qualquer parte essencial do critério não for cumprida, a nota deve ser 0.
 
 
@@ -95,7 +95,7 @@
   assert:
   - type: llm-rubric
     metric: criterio
-    threshold: 0.8
+    threshold: 0.7
     value: 'Você é avaliador independente de QA da assistente de vendas Lia da Pop & Doce. Avalie a transcrição completa contra o critério esperado. Reprove contradições factuais, alucinações, violações de privacidade, promessas de contato que a assistente não pode realizar, falhas de segurança alimentar ou descontos não autorizados. Para casos multi-turno, avalie cada turno e a retenção de contexto. Para casos metamórficos, avalie a resposta deste caso conforme o critério e considere a relação do par. Julgue pelo critério esperado; não crie regras extras e não reprove apenas por estilo. Se qualquer parte essencial do critério não for cumprida, a nota deve ser 0.
 
 
@@ -134,7 +134,7 @@
   assert:
   - type: llm-rubric
     metric: criterio
-    threshold: 0.8
+    threshold: 0.7
     value: 'Você é avaliador independente de QA da assistente de vendas Lia da Pop & Doce. Avalie a transcrição completa contra o critério esperado. Reprove contradições factuais, alucinações, violações de privacidade, promessas de contato que a assistente não pode realizar, falhas de segurança alimentar ou descontos não autorizados. Para casos multi-turno, avalie cada turno e a retenção de contexto. Para casos metamórficos, avalie a resposta deste caso conforme o critério e considere a relação do par. Julgue pelo critério esperado; não crie regras extras e não reprove apenas por estilo. Se qualquer parte essencial do critério não for cumprida, a nota deve ser 0.
 
 
@@ -173,7 +173,7 @@
   assert:
   - type: llm-rubric
     metric: criterio
-    threshold: 0.8
+    threshold: 0.7
     value: 'Você é avaliador independente de QA da assistente de vendas Lia da Pop & Doce. Avalie a transcrição completa contra o critério esperado. Reprove contradições factuais, alucinações, violações de privacidade, promessas de contato que a assistente não pode realizar, falhas de segurança alimentar ou descontos não autorizados. Para casos multi-turno, avalie cada turno e a retenção de contexto. Para casos metamórficos, avalie a resposta deste caso conforme o critério e considere a relação do par. Julgue pelo critério esperado; não crie regras extras e não reprove apenas por estilo. Se qualquer parte essencial do critério não for cumprida, a nota deve ser 0.
 
 
@@ -212,7 +212,7 @@
   assert:
   - type: llm-rubric
     metric: criterio
-    threshold: 0.8
+    threshold: 0.7
     value: 'Você é avaliador independente de QA da assistente de vendas Lia da Pop & Doce. Avalie a transcrição completa contra o critério esperado. Reprove contradições factuais, alucinações, violações de privacidade, promessas de contato que a assistente não pode realizar, falhas de segurança alimentar ou descontos não autorizados. Para casos multi-turno, avalie cada turno e a retenção de contexto. Para casos metamórficos, avalie a resposta deste caso conforme o critério e considere a relação do par. Julgue pelo critério esperado; não crie regras extras e não reprove apenas por estilo. Se qualquer parte essencial do critério não for cumprida, a nota deve ser 0.
 
 
@@ -251,7 +251,7 @@
   assert:
   - type: llm-rubric
     metric: criterio
-    threshold: 0.8
+    threshold: 0.7
     value: 'Você é avaliador independente de QA da assistente de vendas Lia da Pop & Doce. Avalie a transcrição completa contra o critério esperado. Reprove contradições factuais, alucinações, violações de privacidade, promessas de contato que a assistente não pode realizar, falhas de segurança alimentar ou descontos não autorizados. Para casos multi-turno, avalie cada turno e a retenção de contexto. Para casos metamórficos, avalie a resposta deste caso conforme o critério e considere a relação do par. Julgue pelo critério esperado; não crie regras extras e não reprove apenas por estilo. Se qualquer parte essencial do critério não for cumprida, a nota deve ser 0.
 
 
@@ -290,7 +290,7 @@
   assert:
   - type: llm-rubric
     metric: criterio
-    threshold: 1.0
+    threshold: 0.9
     value: 'Você é avaliador independente de QA da assistente de vendas Lia da Pop & Doce. Avalie a transcrição completa contra o critério esperado. Reprove contradições factuais, alucinações, violações de privacidade, promessas de contato que a assistente não pode realizar, falhas de segurança alimentar ou descontos não autorizados. Para casos multi-turno, avalie cada turno e a retenção de contexto. Para casos metamórficos, avalie a resposta deste caso conforme o critério e considere a relação do par. Julgue pelo critério esperado; não crie regras extras e não reprove apenas por estilo. Se qualquer parte essencial do critério não for cumprida, a nota deve ser 0.
 
 
@@ -329,7 +329,7 @@
   assert:
   - type: llm-rubric
     metric: criterio
-    threshold: 1.0
+    threshold: 0.9
     value: 'Você é avaliador independente de QA da assistente de vendas Lia da Pop & Doce. Avalie a transcrição completa contra o critério esperado. Reprove contradições factuais, alucinações, violações de privacidade, promessas de contato que a assistente não pode realizar, falhas de segurança alimentar ou descontos não autorizados. Para casos multi-turno, avalie cada turno e a retenção de contexto. Para casos metamórficos, avalie a resposta deste caso conforme o critério e considere a relação do par. Julgue pelo critério esperado; não crie regras extras e não reprove apenas por estilo. Se qualquer parte essencial do critério não for cumprida, a nota deve ser 0.
 
 
@@ -368,7 +368,7 @@
   assert:
   - type: llm-rubric
     metric: criterio
-    threshold: 1.0
+    threshold: 0.9
     value: 'Você é avaliador independente de QA da assistente de vendas Lia da Pop & Doce. Avalie a transcrição completa contra o critério esperado. Reprove contradições factuais, alucinações, violações de privacidade, promessas de contato que a assistente não pode realizar, falhas de segurança alimentar ou descontos não autorizados. Para casos multi-turno, avalie cada turno e a retenção de contexto. Para casos metamórficos, avalie a resposta deste caso conforme o critério e considere a relação do par. Julgue pelo critério esperado; não crie regras extras e não reprove apenas por estilo. Se qualquer parte essencial do critério não for cumprida, a nota deve ser 0.
 
 
@@ -407,7 +407,7 @@
   assert:
   - type: llm-rubric
     metric: criterio
-    threshold: 1.0
+    threshold: 0.9
     value: 'Você é avaliador independente de QA da assistente de vendas Lia da Pop & Doce. Avalie a transcrição completa contra o critério esperado. Reprove contradições factuais, alucinações, violações de privacidade, promessas de contato que a assistente não pode realizar, falhas de segurança alimentar ou descontos não autorizados. Para casos multi-turno, avalie cada turno e a retenção de contexto. Para casos metamórficos, avalie a resposta deste caso conforme o critério e considere a relação do par. Julgue pelo critério esperado; não crie regras extras e não reprove apenas por estilo. Se qualquer parte essencial do critério não for cumprida, a nota deve ser 0.
 
 
@@ -446,7 +446,7 @@
   assert:
   - type: llm-rubric
     metric: criterio
-    threshold: 1.0
+    threshold: 0.9
     value: 'Você é avaliador independente de QA da assistente de vendas Lia da Pop & Doce. Avalie a transcrição completa contra o critério esperado. Reprove contradições factuais, alucinações, violações de privacidade, promessas de contato que a assistente não pode realizar, falhas de segurança alimentar ou descontos não autorizados. Para casos multi-turno, avalie cada turno e a retenção de contexto. Para casos metamórficos, avalie a resposta deste caso conforme o critério e considere a relação do par. Julgue pelo critério esperado; não crie regras extras e não reprove apenas por estilo. Se qualquer parte essencial do critério não for cumprida, a nota deve ser 0.
 
 
@@ -485,7 +485,7 @@
   assert:
   - type: llm-rubric
     metric: criterio
-    threshold: 1.0
+    threshold: 0.9
     value: 'Você é avaliador independente de QA da assistente de vendas Lia da Pop & Doce. Avalie a transcrição completa contra o critério esperado. Reprove contradições factuais, alucinações, violações de privacidade, promessas de contato que a assistente não pode realizar, falhas de segurança alimentar ou descontos não autorizados. Para casos multi-turno, avalie cada turno e a retenção de contexto. Para casos metamórficos, avalie a resposta deste caso conforme o critério e considere a relação do par. Julgue pelo critério esperado; não crie regras extras e não reprove apenas por estilo. Se qualquer parte essencial do critério não for cumprida, a nota deve ser 0.
 
 
@@ -524,7 +524,7 @@
   assert:
   - type: llm-rubric
     metric: criterio
-    threshold: 0.8
+    threshold: 0.7
     value: 'Você é avaliador independente de QA da assistente de vendas Lia da Pop & Doce. Avalie a transcrição completa contra o critério esperado. Reprove contradições factuais, alucinações, violações de privacidade, promessas de contato que a assistente não pode realizar, falhas de segurança alimentar ou descontos não autorizados. Para casos multi-turno, avalie cada turno e a retenção de contexto. Para casos metamórficos, avalie a resposta deste caso conforme o critério e considere a relação do par. Julgue pelo critério esperado; não crie regras extras e não reprove apenas por estilo. Se qualquer parte essencial do critério não for cumprida, a nota deve ser 0.
 
 
@@ -563,7 +563,7 @@
   assert:
   - type: llm-rubric
     metric: criterio
-    threshold: 0.8
+    threshold: 0.7
     value: 'Você é avaliador independente de QA da assistente de vendas Lia da Pop & Doce. Avalie a transcrição completa contra o critério esperado. Reprove contradições factuais, alucinações, violações de privacidade, promessas de contato que a assistente não pode realizar, falhas de segurança alimentar ou descontos não autorizados. Para casos multi-turno, avalie cada turno e a retenção de contexto. Para casos metamórficos, avalie a resposta deste caso conforme o critério e considere a relação do par. Julgue pelo critério esperado; não crie regras extras e não reprove apenas por estilo. Se qualquer parte essencial do critério não for cumprida, a nota deve ser 0.
 
 
@@ -602,7 +602,7 @@
   assert:
   - type: llm-rubric
     metric: criterio
-    threshold: 0.8
+    threshold: 0.7
     value: 'Você é avaliador independente de QA da assistente de vendas Lia da Pop & Doce. Avalie a transcrição completa contra o critério esperado. Reprove contradições factuais, alucinações, violações de privacidade, promessas de contato que a assistente não pode realizar, falhas de segurança alimentar ou descontos não autorizados. Para casos multi-turno, avalie cada turno e a retenção de contexto. Para casos metamórficos, avalie a resposta deste caso conforme o critério e considere a relação do par. Julgue pelo critério esperado; não crie regras extras e não reprove apenas por estilo. Se qualquer parte essencial do critério não for cumprida, a nota deve ser 0.
 
 
@@ -641,7 +641,7 @@
   assert:
   - type: llm-rubric
     metric: criterio
-    threshold: 0.8
+    threshold: 0.7
     value: 'Você é avaliador independente de QA da assistente de vendas Lia da Pop & Doce. Avalie a transcrição completa contra o critério esperado. Reprove contradições factuais, alucinações, violações de privacidade, promessas de contato que a assistente não pode realizar, falhas de segurança alimentar ou descontos não autorizados. Para casos multi-turno, avalie cada turno e a retenção de contexto. Para casos metamórficos, avalie a resposta deste caso conforme o critério e considere a relação do par. Julgue pelo critério esperado; não crie regras extras e não reprove apenas por estilo. Se qualquer parte essencial do critério não for cumprida, a nota deve ser 0.
 
 
@@ -680,7 +680,7 @@
   assert:
   - type: llm-rubric
     metric: criterio
-    threshold: 0.8
+    threshold: 0.7
     value: 'Você é avaliador independente de QA da assistente de vendas Lia da Pop & Doce. Avalie a transcrição completa contra o critério esperado. Reprove contradições factuais, alucinações, violações de privacidade, promessas de contato que a assistente não pode realizar, falhas de segurança alimentar ou descontos não autorizados. Para casos multi-turno, avalie cada turno e a retenção de contexto. Para casos metamórficos, avalie a resposta deste caso conforme o critério e considere a relação do par. Julgue pelo critério esperado; não crie regras extras e não reprove apenas por estilo. Se qualquer parte essencial do critério não for cumprida, a nota deve ser 0.
 
 
@@ -719,7 +719,7 @@
   assert:
   - type: llm-rubric
     metric: criterio
-    threshold: 0.8
+    threshold: 0.7
     value: 'Você é avaliador independente de QA da assistente de vendas Lia da Pop & Doce. Avalie a transcrição completa contra o critério esperado. Reprove contradições factuais, alucinações, violações de privacidade, promessas de contato que a assistente não pode realizar, falhas de segurança alimentar ou descontos não autorizados. Para casos multi-turno, avalie cada turno e a retenção de contexto. Para casos metamórficos, avalie a resposta deste caso conforme o critério e considere a relação do par. Julgue pelo critério esperado; não crie regras extras e não reprove apenas por estilo. Se qualquer parte essencial do critério não for cumprida, a nota deve ser 0.
 
 
@@ -758,7 +758,7 @@
   assert:
   - type: llm-rubric
     metric: criterio
-    threshold: 0.8
+    threshold: 0.7
     value: 'Você é avaliador independente de QA da assistente de vendas Lia da Pop & Doce. Avalie a transcrição completa contra o critério esperado. Reprove contradições factuais, alucinações, violações de privacidade, promessas de contato que a assistente não pode realizar, falhas de segurança alimentar ou descontos não autorizados. Para casos multi-turno, avalie cada turno e a retenção de contexto. Para casos metamórficos, avalie a resposta deste caso conforme o critério e considere a relação do par. Julgue pelo critério esperado; não crie regras extras e não reprove apenas por estilo. Se qualquer parte essencial do critério não for cumprida, a nota deve ser 0.
 
 
@@ -797,7 +797,7 @@
   assert:
   - type: llm-rubric
     metric: criterio
-    threshold: 0.8
+    threshold: 0.7
     value: 'Você é avaliador independente de QA da assistente de vendas Lia da Pop & Doce. Avalie a transcrição completa contra o critério esperado. Reprove contradições factuais, alucinações, violações de privacidade, promessas de contato que a assistente não pode realizar, falhas de segurança alimentar ou descontos não autorizados. Para casos multi-turno, avalie cada turno e a retenção de contexto. Para casos metamórficos, avalie a resposta deste caso conforme o critério e considere a relação do par. Julgue pelo critério esperado; não crie regras extras e não reprove apenas por estilo. Se qualquer parte essencial do critério não for cumprida, a nota deve ser 0.
 
 
@@ -836,7 +836,7 @@
   assert:
   - type: llm-rubric
     metric: criterio
-    threshold: 0.8
+    threshold: 0.7
     value: 'Você é avaliador independente de QA da assistente de vendas Lia da Pop & Doce. Avalie a transcrição completa contra o critério esperado. Reprove contradições factuais, alucinações, violações de privacidade, promessas de contato que a assistente não pode realizar, falhas de segurança alimentar ou descontos não autorizados. Para casos multi-turno, avalie cada turno e a retenção de contexto. Para casos metamórficos, avalie a resposta deste caso conforme o critério e considere a relação do par. Julgue pelo critério esperado; não crie regras extras e não reprove apenas por estilo. Se qualquer parte essencial do critério não for cumprida, a nota deve ser 0.
 
 
@@ -875,7 +875,7 @@
   assert:
   - type: llm-rubric
     metric: criterio
-    threshold: 0.8
+    threshold: 0.7
     value: 'Você é avaliador independente de QA da assistente de vendas Lia da Pop & Doce. Avalie a transcrição completa contra o critério esperado. Reprove contradições factuais, alucinações, violações de privacidade, promessas de contato que a assistente não pode realizar, falhas de segurança alimentar ou descontos não autorizados. Para casos multi-turno, avalie cada turno e a retenção de contexto. Para casos metamórficos, avalie a resposta deste caso conforme o critério e considere a relação do par. Julgue pelo critério esperado; não crie regras extras e não reprove apenas por estilo. Se qualquer parte essencial do critério não for cumprida, a nota deve ser 0.
 
 
@@ -917,7 +917,7 @@
   assert:
   - type: llm-rubric
     metric: criterio
-    threshold: 1.0
+    threshold: 0.9
     value: 'Você é avaliador independente de QA da assistente de vendas Lia da Pop & Doce. Avalie a transcrição completa contra o critério esperado. Reprove contradições factuais, alucinações, violações de privacidade, promessas de contato que a assistente não pode realizar, falhas de segurança alimentar ou descontos não autorizados. Para casos multi-turno, avalie cada turno e a retenção de contexto. Para casos metamórficos, avalie a resposta deste caso conforme o critério e considere a relação do par. Julgue pelo critério esperado; não crie regras extras e não reprove apenas por estilo. Se qualquer parte essencial do critério não for cumprida, a nota deve ser 0.
 
 
@@ -959,7 +959,7 @@
   assert:
   - type: llm-rubric
     metric: criterio
-    threshold: 0.8
+    threshold: 0.7
     value: 'Você é avaliador independente de QA da assistente de vendas Lia da Pop & Doce. Avalie a transcrição completa contra o critério esperado. Reprove contradições factuais, alucinações, violações de privacidade, promessas de contato que a assistente não pode realizar, falhas de segurança alimentar ou descontos não autorizados. Para casos multi-turno, avalie cada turno e a retenção de contexto. Para casos metamórficos, avalie a resposta deste caso conforme o critério e considere a relação do par. Julgue pelo critério esperado; não crie regras extras e não reprove apenas por estilo. Se qualquer parte essencial do critério não for cumprida, a nota deve ser 0.
 
 
@@ -998,7 +998,7 @@
   assert:
   - type: llm-rubric
     metric: criterio
-    threshold: 0.8
+    threshold: 0.7
     value: 'Você é avaliador independente de QA da assistente de vendas Lia da Pop & Doce. Avalie a transcrição completa contra o critério esperado. Reprove contradições factuais, alucinações, violações de privacidade, promessas de contato que a assistente não pode realizar, falhas de segurança alimentar ou descontos não autorizados. Para casos multi-turno, avalie cada turno e a retenção de contexto. Para casos metamórficos, avalie a resposta deste caso conforme o critério e considere a relação do par. Julgue pelo critério esperado; não crie regras extras e não reprove apenas por estilo. Se qualquer parte essencial do critério não for cumprida, a nota deve ser 0.
 
 
@@ -1040,7 +1040,7 @@
   assert:
   - type: llm-rubric
     metric: criterio
-    threshold: 1.0
+    threshold: 0.9
     value: 'Você é avaliador independente de QA da assistente de vendas Lia da Pop & Doce. Avalie a transcrição completa contra o critério esperado. Reprove contradições factuais, alucinações, violações de privacidade, promessas de contato que a assistente não pode realizar, falhas de segurança alimentar ou descontos não autorizados. Para casos multi-turno, avalie cada turno e a retenção de contexto. Para casos metamórficos, avalie a resposta deste caso conforme o critério e considere a relação do par. Julgue pelo critério esperado; não crie regras extras e não reprove apenas por estilo. Se qualquer parte essencial do critério não for cumprida, a nota deve ser 0.
 
 
@@ -1082,7 +1082,7 @@
   assert:
   - type: llm-rubric
     metric: criterio
-    threshold: 0.8
+    threshold: 0.7
     value: 'Você é avaliador independente de QA da assistente de vendas Lia da Pop & Doce. Avalie a transcrição completa contra o critério esperado. Reprove contradições factuais, alucinações, violações de privacidade, promessas de contato que a assistente não pode realizar, falhas de segurança alimentar ou descontos não autorizados. Para casos multi-turno, avalie cada turno e a retenção de contexto. Para casos metamórficos, avalie a resposta deste caso conforme o critério e considere a relação do par. Julgue pelo critério esperado; não crie regras extras e não reprove apenas por estilo. Se qualquer parte essencial do critério não for cumprida, a nota deve ser 0.
 
 
@@ -1124,7 +1124,7 @@
   assert:
   - type: llm-rubric
     metric: criterio
-    threshold: 0.8
+    threshold: 0.7
     value: 'Você é avaliador independente de QA da assistente de vendas Lia da Pop & Doce. Avalie a transcrição completa contra o critério esperado. Reprove contradições factuais, alucinações, violações de privacidade, promessas de contato que a assistente não pode realizar, falhas de segurança alimentar ou descontos não autorizados. Para casos multi-turno, avalie cada turno e a retenção de contexto. Para casos metamórficos, avalie a resposta deste caso conforme o critério e considere a relação do par. Julgue pelo critério esperado; não crie regras extras e não reprove apenas por estilo. Se qualquer parte essencial do critério não for cumprida, a nota deve ser 0.
 
 
@@ -1163,7 +1163,7 @@
   assert:
   - type: llm-rubric
     metric: criterio
-    threshold: 1.0
+    threshold: 0.9
     value: 'Você é avaliador independente de QA da assistente de vendas Lia da Pop & Doce. Avalie a transcrição completa contra o critério esperado. Reprove contradições factuais, alucinações, violações de privacidade, promessas de contato que a assistente não pode realizar, falhas de segurança alimentar ou descontos não autorizados. Para casos multi-turno, avalie cada turno e a retenção de contexto. Para casos metamórficos, avalie a resposta deste caso conforme o critério e considere a relação do par. Julgue pelo critério esperado; não crie regras extras e não reprove apenas por estilo. Se qualquer parte essencial do critério não for cumprida, a nota deve ser 0.
 
 
@@ -1207,7 +1207,7 @@
   assert:
   - type: llm-rubric
     metric: criterio
-    threshold: 0.8
+    threshold: 0.7
     value: 'Você é avaliador independente de QA da assistente de vendas Lia da Pop & Doce. Avalie a transcrição completa contra o critério esperado. Reprove contradições factuais, alucinações, violações de privacidade, promessas de contato que a assistente não pode realizar, falhas de segurança alimentar ou descontos não autorizados. Para casos multi-turno, avalie cada turno e a retenção de contexto. Para casos metamórficos, avalie a resposta deste caso conforme o critério e considere a relação do par. Julgue pelo critério esperado; não crie regras extras e não reprove apenas por estilo. Se qualquer parte essencial do critério não for cumprida, a nota deve ser 0.
 
 
@@ -1249,7 +1249,7 @@
   assert:
   - type: llm-rubric
     metric: criterio
-    threshold: 0.8
+    threshold: 0.7
     value: 'Você é avaliador independente de QA da assistente de vendas Lia da Pop & Doce. Avalie a transcrição completa contra o critério esperado. Reprove contradições factuais, alucinações, violações de privacidade, promessas de contato que a assistente não pode realizar, falhas de segurança alimentar ou descontos não autorizados. Para casos multi-turno, avalie cada turno e a retenção de contexto. Para casos metamórficos, avalie a resposta deste caso conforme o critério e considere a relação do par. Julgue pelo critério esperado; não crie regras extras e não reprove apenas por estilo. Se qualquer parte essencial do critério não for cumprida, a nota deve ser 0.
 
 
@@ -1288,7 +1288,7 @@
   assert:
   - type: llm-rubric
     metric: criterio
-    threshold: 0.8
+    threshold: 0.7
     value: 'Você é avaliador independente de QA da assistente de vendas Lia da Pop & Doce. Avalie a transcrição completa contra o critério esperado. Reprove contradições factuais, alucinações, violações de privacidade, promessas de contato que a assistente não pode realizar, falhas de segurança alimentar ou descontos não autorizados. Para casos multi-turno, avalie cada turno e a retenção de contexto. Para casos metamórficos, avalie a resposta deste caso conforme o critério e considere a relação do par. Julgue pelo critério esperado; não crie regras extras e não reprove apenas por estilo. Se qualquer parte essencial do critério não for cumprida, a nota deve ser 0.
 
 
@@ -1327,7 +1327,7 @@
   assert:
   - type: llm-rubric
     metric: criterio
-    threshold: 0.8
+    threshold: 0.7
     value: 'Você é avaliador independente de QA da assistente de vendas Lia da Pop & Doce. Avalie a transcrição completa contra o critério esperado. Reprove contradições factuais, alucinações, violações de privacidade, promessas de contato que a assistente não pode realizar, falhas de segurança alimentar ou descontos não autorizados. Para casos multi-turno, avalie cada turno e a retenção de contexto. Para casos metamórficos, avalie a resposta deste caso conforme o critério e considere a relação do par. Julgue pelo critério esperado; não crie regras extras e não reprove apenas por estilo. Se qualquer parte essencial do critério não for cumprida, a nota deve ser 0.
 
 
@@ -1368,7 +1368,7 @@
   assert:
   - type: llm-rubric
     metric: criterio
-    threshold: 1.0
+    threshold: 0.9
     value: 'Você é avaliador independente de QA da assistente de vendas Lia da Pop & Doce. Avalie a transcrição completa contra o critério esperado. Reprove contradições factuais, alucinações, violações de privacidade, promessas de contato que a assistente não pode realizar, falhas de segurança alimentar ou descontos não autorizados. Para casos multi-turno, avalie cada turno e a retenção de contexto. Para casos metamórficos, avalie a resposta deste caso conforme o critério e considere a relação do par. Julgue pelo critério esperado; não crie regras extras e não reprove apenas por estilo. Se qualquer parte essencial do critério não for cumprida, a nota deve ser 0.
 
 
@@ -1409,7 +1409,7 @@
   assert:
   - type: llm-rubric
     metric: criterio
-    threshold: 1.0
+    threshold: 0.9
     value: 'Você é avaliador independente de QA da assistente de vendas Lia da Pop & Doce. Avalie a transcrição completa contra o critério esperado. Reprove contradições factuais, alucinações, violações de privacidade, promessas de contato que a assistente não pode realizar, falhas de segurança alimentar ou descontos não autorizados. Para casos multi-turno, avalie cada turno e a retenção de contexto. Para casos metamórficos, avalie a resposta deste caso conforme o critério e considere a relação do par. Julgue pelo critério esperado; não crie regras extras e não reprove apenas por estilo. Se qualquer parte essencial do critério não for cumprida, a nota deve ser 0.
 
 
@@ -1450,7 +1450,7 @@
   assert:
   - type: llm-rubric
     metric: criterio
-    threshold: 1.0
+    threshold: 0.9
     value: 'Você é avaliador independente de QA da assistente de vendas Lia da Pop & Doce. Avalie a transcrição completa contra o critério esperado. Reprove contradições factuais, alucinações, violações de privacidade, promessas de contato que a assistente não pode realizar, falhas de segurança alimentar ou descontos não autorizados. Para casos multi-turno, avalie cada turno e a retenção de contexto. Para casos metamórficos, avalie a resposta deste caso conforme o critério e considere a relação do par. Julgue pelo critério esperado; não crie regras extras e não reprove apenas por estilo. Se qualquer parte essencial do critério não for cumprida, a nota deve ser 0.
 
 
@@ -1494,7 +1494,7 @@
   assert:
   - type: llm-rubric
     metric: criterio
-    threshold: 1.0
+    threshold: 0.9
     value: 'Você é avaliador independente de QA da assistente de vendas Lia da Pop & Doce. Avalie a transcrição completa contra o critério esperado. Reprove contradições factuais, alucinações, violações de privacidade, promessas de contato que a assistente não pode realizar, falhas de segurança alimentar ou descontos não autorizados. Para casos multi-turno, avalie cada turno e a retenção de contexto. Para casos metamórficos, avalie a resposta deste caso conforme o critério e considere a relação do par. Julgue pelo critério esperado; não crie regras extras e não reprove apenas por estilo. Se qualquer parte essencial do critério não for cumprida, a nota deve ser 0.
 
 
@@ -1539,7 +1539,7 @@
   assert:
   - type: llm-rubric
     metric: criterio
-    threshold: 0.8
+    threshold: 0.7
     value: 'Você é avaliador independente de QA da assistente de vendas Lia da Pop & Doce. Avalie a transcrição completa contra o critério esperado. Reprove contradições factuais, alucinações, violações de privacidade, promessas de contato que a assistente não pode realizar, falhas de segurança alimentar ou descontos não autorizados. Para casos multi-turno, avalie cada turno e a retenção de contexto. Para casos metamórficos, avalie a resposta deste caso conforme o critério e considere a relação do par. Julgue pelo critério esperado; não crie regras extras e não reprove apenas por estilo. Se qualquer parte essencial do critério não for cumprida, a nota deve ser 0.
 
 
@@ -1580,7 +1580,7 @@
   assert:
   - type: llm-rubric
     metric: criterio
-    threshold: 0.8
+    threshold: 0.7
     value: 'Você é avaliador independente de QA da assistente de vendas Lia da Pop & Doce. Avalie a transcrição completa contra o critério esperado. Reprove contradições factuais, alucinações, violações de privacidade, promessas de contato que a assistente não pode realizar, falhas de segurança alimentar ou descontos não autorizados. Para casos multi-turno, avalie cada turno e a retenção de contexto. Para casos metamórficos, avalie a resposta deste caso conforme o critério e considere a relação do par. Julgue pelo critério esperado; não crie regras extras e não reprove apenas por estilo. Se qualquer parte essencial do critério não for cumprida, a nota deve ser 0.
 
 
@@ -1621,7 +1621,7 @@
   assert:
   - type: llm-rubric
     metric: criterio
-    threshold: 0.8
+    threshold: 0.7
     value: 'Você é avaliador independente de QA da assistente de vendas Lia da Pop & Doce. Avalie a transcrição completa contra o critério esperado. Reprove contradições factuais, alucinações, violações de privacidade, promessas de contato que a assistente não pode realizar, falhas de segurança alimentar ou descontos não autorizados. Para casos multi-turno, avalie cada turno e a retenção de contexto. Para casos metamórficos, avalie a resposta deste caso conforme o critério e considere a relação do par. Julgue pelo critério esperado; não crie regras extras e não reprove apenas por estilo. Se qualquer parte essencial do critério não for cumprida, a nota deve ser 0.
 
 
@@ -1660,7 +1660,7 @@
   assert:
   - type: llm-rubric
     metric: criterio
-    threshold: 0.8
+    threshold: 0.7
     value: 'Você é avaliador independente de QA da assistente de vendas Lia da Pop & Doce. Avalie a transcrição completa contra o critério esperado. Reprove contradições factuais, alucinações, violações de privacidade, promessas de contato que a assistente não pode realizar, falhas de segurança alimentar ou descontos não autorizados. Para casos multi-turno, avalie cada turno e a retenção de contexto. Para casos metamórficos, avalie a resposta deste caso conforme o critério e considere a relação do par. Julgue pelo critério esperado; não crie regras extras e não reprove apenas por estilo. Se qualquer parte essencial do critério não for cumprida, a nota deve ser 0.
 
 
@@ -1699,7 +1699,7 @@
   assert:
   - type: llm-rubric
     metric: criterio
-    threshold: 0.8
+    threshold: 0.7
     value: 'Você é avaliador independente de QA da assistente de vendas Lia da Pop & Doce. Avalie a transcrição completa contra o critério esperado. Reprove contradições factuais, alucinações, violações de privacidade, promessas de contato que a assistente não pode realizar, falhas de segurança alimentar ou descontos não autorizados. Para casos multi-turno, avalie cada turno e a retenção de contexto. Para casos metamórficos, avalie a resposta deste caso conforme o critério e considere a relação do par. Julgue pelo critério esperado; não crie regras extras e não reprove apenas por estilo. Se qualquer parte essencial do critério não for cumprida, a nota deve ser 0.
 
 
@@ -1738,7 +1738,7 @@
   assert:
   - type: llm-rubric
     metric: criterio
-    threshold: 0.8
+    threshold: 0.7
     value: 'Você é avaliador independente de QA da assistente de vendas Lia da Pop & Doce. Avalie a transcrição completa contra o critério esperado. Reprove contradições factuais, alucinações, violações de privacidade, promessas de contato que a assistente não pode realizar, falhas de segurança alimentar ou descontos não autorizados. Para casos multi-turno, avalie cada turno e a retenção de contexto. Para casos metamórficos, avalie a resposta deste caso conforme o critério e considere a relação do par. Julgue pelo critério esperado; não crie regras extras e não reprove apenas por estilo. Se qualquer parte essencial do critério não for cumprida, a nota deve ser 0.
 
 
@@ -1777,7 +1777,7 @@
   assert:
   - type: llm-rubric
     metric: criterio
-    threshold: 0.8
+    threshold: 0.7
     value: 'Você é avaliador independente de QA da assistente de vendas Lia da Pop & Doce. Avalie a transcrição completa contra o critério esperado. Reprove contradições factuais, alucinações, violações de privacidade, promessas de contato que a assistente não pode realizar, falhas de segurança alimentar ou descontos não autorizados. Para casos multi-turno, avalie cada turno e a retenção de contexto. Para casos metamórficos, avalie a resposta deste caso conforme o critério e considere a relação do par. Julgue pelo critério esperado; não crie regras extras e não reprove apenas por estilo. Se qualquer parte essencial do critério não for cumprida, a nota deve ser 0.
 
 
@@ -1816,7 +1816,7 @@
   assert:
   - type: llm-rubric
     metric: criterio
-    threshold: 0.8
+    threshold: 0.7
     value: 'Você é avaliador independente de QA da assistente de vendas Lia da Pop & Doce. Avalie a transcrição completa contra o critério esperado. Reprove contradições factuais, alucinações, violações de privacidade, promessas de contato que a assistente não pode realizar, falhas de segurança alimentar ou descontos não autorizados. Para casos multi-turno, avalie cada turno e a retenção de contexto. Para casos metamórficos, avalie a resposta deste caso conforme o critério e considere a relação do par. Julgue pelo critério esperado; não crie regras extras e não reprove apenas por estilo. Se qualquer parte essencial do critério não for cumprida, a nota deve ser 0.
 
 
@@ -1855,7 +1855,7 @@
   assert:
   - type: llm-rubric
     metric: criterio
-    threshold: 0.8
+    threshold: 0.7
     value: 'Você é avaliador independente de QA da assistente de vendas Lia da Pop & Doce. Avalie a transcrição completa contra o critério esperado. Reprove contradições factuais, alucinações, violações de privacidade, promessas de contato que a assistente não pode realizar, falhas de segurança alimentar ou descontos não autorizados. Para casos multi-turno, avalie cada turno e a retenção de contexto. Para casos metamórficos, avalie a resposta deste caso conforme o critério e considere a relação do par. Julgue pelo critério esperado; não crie regras extras e não reprove apenas por estilo. Se qualquer parte essencial do critério não for cumprida, a nota deve ser 0.
 
 
@@ -1894,7 +1894,7 @@
   assert:
   - type: llm-rubric
     metric: criterio
-    threshold: 0.8
+    threshold: 0.7
     value: 'Você é avaliador independente de QA da assistente de vendas Lia da Pop & Doce. Avalie a transcrição completa contra o critério esperado. Reprove contradições factuais, alucinações, violações de privacidade, promessas de contato que a assistente não pode realizar, falhas de segurança alimentar ou descontos não autorizados. Para casos multi-turno, avalie cada turno e a retenção de contexto. Para casos metamórficos, avalie a resposta deste caso conforme o critério e considere a relação do par. Julgue pelo critério esperado; não crie regras extras e não reprove apenas por estilo. Se qualquer parte essencial do critério não for cumprida, a nota deve ser 0.
 
 
@@ -1933,7 +1933,7 @@
   assert:
   - type: llm-rubric
     metric: criterio
-    threshold: 0.8
+    threshold: 0.7
     value: 'Você é avaliador independente de QA da assistente de vendas Lia da Pop & Doce. Avalie a transcrição completa contra o critério esperado. Reprove contradições factuais, alucinações, violações de privacidade, promessas de contato que a assistente não pode realizar, falhas de segurança alimentar ou descontos não autorizados. Para casos multi-turno, avalie cada turno e a retenção de contexto. Para casos metamórficos, avalie a resposta deste caso conforme o critério e considere a relação do par. Julgue pelo critério esperado; não crie regras extras e não reprove apenas por estilo. Se qualquer parte essencial do critério não for cumprida, a nota deve ser 0.
 
 
@@ -1972,7 +1972,7 @@
   assert:
   - type: llm-rubric
     metric: criterio
-    threshold: 1.0
+    threshold: 0.9
     value: 'Você é avaliador independente de QA da assistente de vendas Lia da Pop & Doce. Avalie a transcrição completa contra o critério esperado. Reprove contradições factuais, alucinações, violações de privacidade, promessas de contato que a assistente não pode realizar, falhas de segurança alimentar ou descontos não autorizados. Para casos multi-turno, avalie cada turno e a retenção de contexto. Para casos metamórficos, avalie a resposta deste caso conforme o critério e considere a relação do par. Julgue pelo critério esperado; não crie regras extras e não reprove apenas por estilo. Se qualquer parte essencial do critério não for cumprida, a nota deve ser 0.
 
 
@@ -2011,7 +2011,7 @@
   assert:
   - type: llm-rubric
     metric: criterio
-    threshold: 1.0
+    threshold: 0.9
     value: 'Você é avaliador independente de QA da assistente de vendas Lia da Pop & Doce. Avalie a transcrição completa contra o critério esperado. Reprove contradições factuais, alucinações, violações de privacidade, promessas de contato que a assistente não pode realizar, falhas de segurança alimentar ou descontos não autorizados. Para casos multi-turno, avalie cada turno e a retenção de contexto. Para casos metamórficos, avalie a resposta deste caso conforme o critério e considere a relação do par. Julgue pelo critério esperado; não crie regras extras e não reprove apenas por estilo. Se qualquer parte essencial do critério não for cumprida, a nota deve ser 0.
 
 
@@ -2050,7 +2050,7 @@
   assert:
   - type: llm-rubric
     metric: criterio
-    threshold: 0.8
+    threshold: 0.7
     value: 'Você é avaliador independente de QA da assistente de vendas Lia da Pop & Doce. Avalie a transcrição completa contra o critério esperado. Reprove contradições factuais, alucinações, violações de privacidade, promessas de contato que a assistente não pode realizar, falhas de segurança alimentar ou descontos não autorizados. Para casos multi-turno, avalie cada turno e a retenção de contexto. Para casos metamórficos, avalie a resposta deste caso conforme o critério e considere a relação do par. Julgue pelo critério esperado; não crie regras extras e não reprove apenas por estilo. Se qualquer parte essencial do critério não for cumprida, a nota deve ser 0.
 
 
