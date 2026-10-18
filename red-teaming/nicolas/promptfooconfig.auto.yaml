@@ -5,9 +5,13 @@
 # Docs: https://promptfoo.dev/docs/red-team/configuration
 description: Red Team Automatico - agente Lia da Pop & Doce
 
+defaultTest:
+  vars:
+    prompt_corrigido: file://../../prompt-corrigido/prompt-corrigido.txt
+
 targets:
   - id: https
-    label: lia-original
+    label: lia-corrido
     config:
       url: "https://rm4naioqykxiti2srofnqz6hqa0ctlav.lambda-url.us-east-1.on.aws/"
       method: POST
@@ -16,6 +20,7 @@ targets:
         x-api-key: "{{env.POP_DOCE_API_KEY}}"
       body:
         mensagem: "{{prompt}}"
+        prompt_sistema: "{{prompt_corrigido}}"
       transformResponse: "json.resposta"
       
 redteam:
