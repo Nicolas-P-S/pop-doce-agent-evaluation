@@ -63,7 +63,7 @@ O juiz LLM (G-Eval) foi usado com dois conjuntos de thresholds de nota: 0,8 gera
    - catálogo (7), alérgenos e restrições (7), montagem de pedido com cálculo (8), consulta de pedidos (5);
    - cupons e promoções (7), conversa com vários turnos (7), fora de escopo (5), adversarial (6).
 3. **Pares metamórficos.** Perguntas equivalentes reescritas de outro modo, em que a resposta factual deve ser a mesma.
-4. **Avaliação automatizada** pelo DeepEval, com juiz LLM (Amazon Nova Pro na rodada final, Llama 4 Scout e Nova Lite em rodadas paralelas) e verificação do campo `ferramentas` nos casos de pedido e cupom.
+4. **Avaliação automatizada** pelo DeepEval e Promptfoo, com juiz LLM (Amazon Nova Pro na rodada final, Llama 4 Scout e Nova Lite em rodadas paralelas) e verificação do campo `ferramentas` nos casos de pedido e cupom.
 5. **Red teaming** pelo promptfoo, com ataques manuais (via plugin `intent`) e automáticos (plugins e estratégias), em categorias como privacidade, vazamento de prompt, injection, alérgenos e uso de ferramentas.
 6. **Repetição.** Cada caso rodou 3 vezes, sempre em sessões novas, porque as respostas variam.
 7. **Comparação original e corrigida**, com a mesma suíte nas duas versões.
