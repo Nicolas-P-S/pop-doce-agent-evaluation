@@ -1,8 +1,8 @@
 # Suíte Python (complementar) — Lia / Pop & Doce
 
 Harness em Python que executa o golden dataset contra a API da Lia e avalia cada resposta com um juiz (LLM-as-judge)
-no AWS Bedrock. **A suíte principal do desafio está em `../promptfoo/`**; esta pasta complementa, com checagens
-determinísticas e um relatório próprio de Go/No-Go, e serve para confirmar os resultados do promptfoo por um segundo caminho.
+no AWS Bedrock. **A suíte principal do desafio está em `../promptfoo/`**; esta pasta foi executada antes do promptfoo para anotar os resultados e analisar possíveis melhorias do Golden Dataset, com checagens
+determinísticas e um relatório próprio de Go/No-Go, e serviu para confirmar os resultados do promptfoo por um segundo caminho e também para analisar os casos do Golden Dataset. Então ele utiliza a versão original do golden dataset e não a versão final.
 
 ## Para que serve
 
@@ -17,7 +17,7 @@ determinísticas e um relatório próprio de Go/No-Go, e serve para confirmar os
 | Arquivo | Função |
 |---|---|
 | `run_golden.py` | Executa todos os casos, avalia e gera os relatórios. |
-| `../dataset/golden_dataset_pop_doce_52_casos.csv` | Fonte única dos casos (a mesma usada pelo promptfoo). |
+| `../original/golden_dataset_pop_doce_52_casos.csv` | Fonte única dos casos (a mesma usada pelo promptfoo). |
 | `prompt_corrigido.txt` | **Você cria**: prompt de sistema da versão corrigida. |
 | `resultados/` | Saída de cada rodada (veja abaixo). |
 
@@ -123,5 +123,3 @@ Descontando PED-03 e CON-01, a aprovação sobe de 59,0% para cerca de 62,8% (98
 | Pares metamórficos | Juiz compara as duas respostas | Aproximação (os dois casos precisam passar) |
 | Relatório | `resumo.md` | `gate.md` + painel `promptfoo view` |
 
-Resultados diferentes entre as duas suítes não indicam necessariamente um bug do teste: a rodada Python teve ferramentas
-ativas e as rodadas do promptfoo não. Confirme a chave e a `LIA_API_URL` usadas em cada cliente antes de comparar.
